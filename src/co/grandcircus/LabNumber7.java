@@ -25,7 +25,7 @@ public class LabNumber7 {
 		while (!isValid) {
 			System.out.print(prompt);
 			name = scan.next();
-			if (Pattern.matches("^[A-Z][a-z]{1,30}", name)) {
+			if (Pattern.matches("^[A-Z][a-z]{1,29}", name)) {
 				isValid = true;
 			} else {
 				System.out.println("Not a valid name! Try again: ");
@@ -71,7 +71,7 @@ public class LabNumber7 {
 		while (!isValid) {
 			System.out.print(prompt);
 			date = scan.next();
-			if (Pattern.matches("[0-3][1-9]\\/[0-3][1-9]\\/\\d{4}", date)) {
+			if (Pattern.matches("(([0][1-9]|[1-2][0-9]|[3][0-1])\\/([0][13578]|[1][02]))\\/\\d{4}|(([0][1-9]|[1-2][0-9]|[3][0])\\/([0][469]|[1][1]))\\/\\d{4}|(([0][1-9]|[1-2][0-9])\\/([0][2]))\\/\\d{4}", date)) {
 				isValid = true;
 			} else {
 				System.out.println("Not a valid date! Try again: ");
